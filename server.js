@@ -39,7 +39,7 @@ function filterByQuery(query, animalsArray) {
         filteredResults = filteredResults.filter(animal => animal.name === query.name);
     }
     return filteredResults;
-}
+}}
 
 
 app.get('/api/animals', (req, res) => {
@@ -50,7 +50,7 @@ app.get('/api/animals', (req, res) => {
     res.json(results);
 });
 app.listen(PORT, () => {
-    console.log('API server now on port 3001!');
+    console.log('API server now on port ${PORT}!');
 });
 
 //https://git.heroku.com/shrouded-woodland-55314.git
